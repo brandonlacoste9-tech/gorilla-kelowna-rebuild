@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gorilla Property Services Kelowna | Window Cleaning, Gutters, Pressure Washing & More</title>
+<meta name="description" content="Kelowna's full-service property maintenance crew: window cleaning, gutter cleaning, pressure washing, roof cleaning, dryer vents, graffiti removal, holiday lights and snow clearing. 5.0★ on Google. Call 250-419-9719.">
+<style>
+  :root { --green:#1d7a34; --green-d:#125c26; --lime:#8fd14f; --ink:#152219; --paper:#f6faf4; --gold:#f5b301; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; color:var(--ink); background:var(--paper); line-height:1.6; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 22px; }
+
+  header { position:sticky; top:0; z-index:50; background:rgba(18,40,24,.97); backdrop-filter:blur(8px); }
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+  .logo { font-weight:800; font-size:1.3rem; color:#fff; text-decoration:none; letter-spacing:.5px; }
+  .logo span { color:var(--lime); }
+  .nav-links { display:flex; gap:26px; align-items:center; }
+  .nav-links a { text-decoration:none; color:#dceadd; font-weight:600; font-size:.95rem; }
+  .nav-links a:hover { color:var(--lime); }
+  .btn { display:inline-block; background:var(--lime); color:#0f2413 !important; padding:12px 28px; border-radius:999px; font-weight:800; text-decoration:none; transition:.2s; border:none; cursor:pointer; font-size:1rem; }
+  .btn:hover { transform:translateY(-1px); filter:brightness(1.05); }
+  @media(max-width:760px){ .nav-links a:not(.btn){ display:none; } }
+
+  .hero { position:relative; min-height:86vh; display:flex; align-items:flex-end; color:#fff; overflow:hidden; }
+  .hero-bg { position:absolute; inset:0; }
+  .hero-bg img { width:100%; height:100%; object-fit:cover; display:block; }
+  .hero-shade { position:absolute; inset:0; background:linear-gradient(to top, rgba(8,20,12,.85) 0%, rgba(8,20,12,.3) 50%, rgba(8,20,12,.2) 100%); }
+  .hero-inner { position:relative; padding:70px 0 80px; width:100%; }
+  .hero h1 { font-size:clamp(2.3rem,5.5vw,4rem); line-height:1.08; font-weight:800; max-width:780px; text-shadow:0 2px 20px rgba(0,0,0,.5); }
+  .hero h1 em { color:var(--lime); font-style:normal; }
+  .hero p.lead { font-size:1.18rem; max-width:640px; margin:18px 0 28px; color:#eef5ea; }
+  .hero-cta-row { display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .phone-big { font-size:1.5rem; font-weight:800; color:#fff; text-decoration:none; }
+  .phone-big:hover { color:var(--lime); }
+  .badges { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+  .badges span { background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.35); padding:8px 16px; border-radius:999px; font-size:.88rem; font-weight:600; backdrop-filter:blur(4px); }
+
+  section { padding:76px 0; }
+  .kicker { color:var(--green); font-weight:800; text-transform:uppercase; letter-spacing:2px; font-size:.82rem; margin-bottom:10px; }
+  h2 { font-size:clamp(1.7rem,3.5vw,2.5rem); font-weight:800; margin-bottom:14px; line-height:1.2; }
+  .sec-sub { color:#4a5a4e; max-width:700px; margin-bottom:40px; font-size:1.05rem; }
+
+  .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:22px; }
+  .card { background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 8px 30px rgba(20,40,25,.08); border:1px solid #e4efe2; transition:.2s; }
+  .card:hover { transform:translateY(-4px); }
+  .card img { width:100%; height:160px; object-fit:cover; display:block; }
+  .card .body { padding:22px 24px 26px; }
+  .card .ico { font-size:1.9rem; }
+  .card h3 { font-size:1.15rem; margin:8px 0 6px; }
+  .card p { color:#4a5a4e; font-size:.94rem; }
+
+  .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .step { background:#fff; border-radius:18px; padding:30px 26px; border:1px solid #e4efe2; text-align:center; }
+  .step .n { font-size:2.4rem; font-weight:800; color:var(--lime); }
+  .step h3 { margin:10px 0 8px; }
+  .step p { color:#4a5a4e; font-size:.95rem; }
+
+  .quotes { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px; }
+  blockquote { background:#fff; border-radius:18px; padding:28px 26px; border:1px solid #e4efe2; box-shadow:0 8px 30px rgba(20,40,25,.07); font-size:.95rem; color:#33413a; }
+  blockquote footer { margin-top:14px; font-weight:700; color:var(--ink); font-style:normal; }
+  blockquote footer small { display:block; font-weight:500; color:#6b7a70; }
+  .stars { color:var(--gold); font-size:1.1rem; letter-spacing:2px; }
+
+  .faq details { background:#fff; border:1px solid #e4efe2; border-radius:14px; padding:18px 22px; margin-bottom:12px; }
+  .faq summary { font-weight:700; cursor:pointer; font-size:1.02rem; }
+  .faq p { margin-top:10px; color:#4a5a4e; font-size:.96rem; }
+
+  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+  @media(max-width:820px){ .contact-grid{ grid-template-columns:1fr; } }
+  .contact-card { background:#fff; border-radius:20px; padding:36px 32px; border:1px solid #e4efe2; box-shadow:0 12px 36px rgba(20,40,25,.09); }
+  .contact-card h3 { margin-bottom:18px; }
+  .contact-line { display:flex; gap:12px; align-items:flex-start; margin-bottom:16px; font-size:1.02rem; }
+  .contact-line a { color:var(--green-d); font-weight:700; text-decoration:none; }
+  form label { display:block; font-weight:600; font-size:.9rem; margin:14px 0 6px; }
+  form input, form select, form textarea { width:100%; padding:12px 14px; border:1.5px solid #d9e2d9; border-radius:12px; font-size:1rem; font-family:inherit; }
+  form input:focus, form select:focus, form textarea:focus { outline:none; border-color:var(--green); }
+  form textarea { min-height:100px; resize:vertical; }
+  .fine { font-size:.8rem; color:#6b7a70; margin-top:12px; }
+
+  footer { background:#0e2013; color:#9db3a2; padding:36px 0; font-size:.92rem; }
+  footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; align-items:center; }
+  footer a { color:#fff; font-weight:700; text-decoration:none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">🦍 GORILLA <span>KELOWNA</span></a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="tel:+12504199719">250-419-9719</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-bg"><img src="photos/hero-wash.jpg" alt="Professional pressure washing a Kelowna home exterior"></div>
+  <div class="hero-shade"></div>
+  <div class="wrap hero-inner">
+    <h1>Property maintenance, <em>handled.</em></h1>
+    <p class="lead">Hand off the to-do list to the local pros — windows, gutters, pressure washing, roof care and snow clearing, all from one crew.</p>
+    <div class="hero-cta-row">
+      <a class="btn" href="#contact">Request a Free Quote</a>
+      <a class="phone-big" href="tel:+12504199719">📞 250-419-9719</a>
+    </div>
+    <div class="badges">
+      <span>⭐ 5.0 on Google (32 reviews)</span>
+      <span>🛡️ Insured &amp; WCB covered</span>
+      <span>📍 Local Kelowna crew</span>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="kicker">What We Do</div>
+    <h2>One crew for the whole property.</h2>
+    <p class="sec-sub">No juggling five different companies. From the roofline to the driveway, our Gorillas do it all — safely, on time, and backed by a satisfaction guarantee.</p>
+    <div class="services">
+      <div class="card"><img src="photos/windows.jpg" alt="Window cleaning with water-fed pole"><div class="body"><h3>Window Cleaning</h3><p>Streak-free panes, sills and frames up to four storeys — rubber squeegees and water-fed poles, no ladders on your siding.</p></div></div>
+      <div class="card"><img src="photos/gutter.jpg" alt="Gutter cleaning on a ladder"><div class="body"><h3>Gutter Cleaning</h3><p>Full cleanout of gutters and downspouts with proper stand-offs — no slips, no damage, no overflow next rainfall.</p></div></div>
+      <div class="card"><img src="photos/hero-wash.jpg" alt="Pressure washing a home"><div class="body"><h3>Pressure Washing</h3><p>Driveways, siding, patios and walkways restored to like-new. Eco-friendly cleaners, the right pressure for every surface.</p></div></div>
+      <div class="card"><div class="body"><div class="ico">🧽</div><h3>Soft Washing</h3><p>Low-pressure wash for roofs, stucco and delicate siding — kills moss, algae and mildew at the root without damage.</p></div></div>
+      <div class="card"><div class="body"><div class="ico">🏠</div><h3>Roof Cleaning</h3><p>Moss removal and roof treatments that extend the life of your shingles in Kelowna's wet winters.</p></div></div>
+      <div class="card"><div class="body"><div class="ico">🔥</div><h3>Dryer Vent Cleaning</h3><p>Lint-clogged vents are a fire risk and an energy drain. We clear the full run, from laundry room to exterior cap.</p></div></div>
+      <div class="card"><div class="body"><div class="ico">🎨</div><h3>Graffiti Removal</h3><p>Fast, paint-matched graffiti removal for commercial buildings and strata properties.</p></div></div>
+      <div class="card"><div class="body"><div class="ico">💡</div><h3>Holiday Light Installation</h3><p>Dazzling displays without the ladder time. We design, install, maintain and take down.</p></div></div>
+      <div class="card"><img src="photos/snow.jpg" alt="Snow clearing a residential walkway"><div class="body"><h3>Snow Clearing</h3><p>Homes, multi-unit properties and commercial spaces — prompt clearing and salting when Kelowna winter hits.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="background:#fff;">
+  <div class="wrap">
+    <div class="kicker">How It Works</div>
+    <h2>Three steps to a spotless property.</h2>
+    <p class="sec-sub">No phone tag. No mystery pricing. Just a quick quote, a confirmed crew, and a job done right.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Get your quote</h3><p>Tell us what the property needs — online form or a quick call. Free, no obligation.</p></div>
+      <div class="step"><div class="n">2</div><h3>We schedule</h3><p>A local crew picks the next available slot — usually within days.</p></div>
+      <div class="step"><div class="n">3</div><h3>We show up</h3><p>On time, full kit, branded crew. We clean up after ourselves and email your receipt.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kicker">Customer Reviews</div>
+    <h2><span class="stars">★★★★★</span> 5.0 — from 32 Google reviews.</h2>
+    <p class="sec-sub">Real reviews from Kelowna neighbours.</p>
+    <div class="quotes">
+      <blockquote><span class="stars">★★★★★</span><br>"I have had my gutters and downspouts cleaned by two young friendly and conscientious gentlemen. They did an excellent job! From the time I contacted the company to when I was scheduled in was prompt and effective. Highly recommend!"<footer>France Grenier</footer></blockquote>
+      <blockquote><span class="stars">★★★★★</span><br>"Great staff. Efficient and friendly. Very thorough. Punctual. My windows look fantastic. The process of booking and paying is easy."<footer>Jane Colpron</footer></blockquote>
+      <blockquote><span class="stars">★★★★★</span><br>"Jim and his team are great to work with. They are tidy, knowledgeable and always helpful with the wide array of services they cover."<footer>Tim Angeard</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:#fff;">
+  <div class="wrap">
+    <div class="kicker">Common Questions</div>
+    <h2>Kelowna Property Services — answered.</h2>
+    <div class="faq" style="margin-top:28px; max-width:800px;">
+      <details><summary>What areas do you cover?</summary><p>Kelowna city core plus Mission, Glenmore and Lower Mission — most properties within reasonable driving distance. Call if you're unsure whether your address is in-zone.</p></details>
+      <details><summary>How do recurring service plans work?</summary><p>Same crew on a fixed schedule (quarterly or semi-annually depending on the service), locked-in pricing for the contract period, and priority response between visits. Pause or cancel with reasonable notice — no long-term lock-in.</p></details>
+      <details><summary>Are you insured?</summary><p>Yes — full liability insurance and WCB coverage on every job. Certificates available on request, which property managers and strata councils often need up front.</p></details>
+      <details><summary>How is pricing structured?</summary><p>Written quotes for every job after an on-site or virtual walkthrough. No surprise charges — quotes are valid for 30 days.</p></details>
+      <details><summary>Do you work with stratas and property managers?</summary><p>All the time. We provide certificates of insurance, schedule around quiet hours, and coordinate with on-site building managers.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:#e9f2e6;">
+  <div class="wrap">
+    <div class="kicker">Contact</div>
+    <h2>Request your free quote.</h2>
+    <p class="sec-sub">Free, no-obligation quote. No surprises, no hidden fees.</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Get in touch</h3>
+        <div class="contact-line">📞 <a href="tel:+12504199719">250-419-9719</a></div>
+        <div class="contact-line">📍 101-1865 Dilworth Drive, Suite 709<br>&nbsp;&nbsp;&nbsp;&nbsp;Kelowna, BC V1Y 9T1</div>
+        <div class="contact-line">🕘 Open 7 days a week, 7am – 7pm</div>
+      </div>
+      <div class="contact-card">
+        <h3>Quote request</h3>
+        <form id="quoteForm">
+          <label>Name<input required name="name" placeholder="Your name"></label>
+          <label>Phone<input required name="phone" type="tel" placeholder="(250) 555-0123"></label>
+          <label>Service needed
+            <select name="service">
+              <option>Window Cleaning</option><option>Gutter Cleaning</option><option>Pressure Washing</option><option>Soft Washing</option><option>Roof Cleaning</option><option>Dryer Vent Cleaning</option><option>Graffiti Removal</option><option>Holiday Light Installation</option><option>Snow Clearing</option><option>Multiple Services</option>
+            </select>
+          </label>
+          <label>Details<textarea name="details" placeholder="Tell us about the property..."></textarea></label>
+          <button class="btn" type="submit" style="margin-top:16px;">Call to Request Quote</button>
+          <p class="fine">Nothing is stored on this website. Tapping the button calls Gorilla Kelowna directly from your own phone.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff;">🦍 Gorilla Property Services — Kelowna</strong> · <a href="tel:+12504199719">250-419-9719</a></div>
+    <div>Windows · Gutters · Pressure Washing · Roof · Snow</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  window.location.href = 'tel:+12504199719';
+});
+</script>
+</body>
+</html>
